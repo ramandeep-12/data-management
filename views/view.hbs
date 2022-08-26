@@ -1,0 +1,21 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">View User</li>
+    </ol>
+</nav>
+
+<div class="view-user p-5">
+{{#each rows}}
+<div class="row mb-5">
+    <div class="col text-center">
+        <h3>{{this.first_name}} {{this.last_name}}</h3>
+        <h3>{{this.email}}</h3>
+        <h3>{{this.phone}}</h3>
+        <h3>{{this.comments}}</h3>
+        <h3>{{this.status}}</h3>
+        
+    </div>
+</div>
+{{/each}}
+</div>
